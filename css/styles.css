@@ -682,7 +682,7 @@ address {
 }
 
 .social {
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .social-title {
@@ -774,6 +774,7 @@ address {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.03em;
 
   color: var(--background-color);
   background-color: var(--accent-color);
@@ -884,7 +885,7 @@ address {
 }
 
 .form-title {
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 
   color: var(--main-black-color);
 
@@ -903,11 +904,12 @@ address {
   outline: 1px solid transparent;
   color: var(--main-black-color);
 
-  transition: bordrer-color 250ms var(--time-function);
+  transition: bordrer-color 250ms var(--time-function), otline 250ms var(--time-function);
 }
 
 .form-input:focus {
   border-color: var(--accent-color);
+  outline: 1px solid var(--accent-color);
 }
 
 .form-textarea {
@@ -950,11 +952,12 @@ textarea {
   border-radius: 4px;
   outline: 1px solid transparent;
 
-  transition: border 250ms var(--time-function);
+  transition: border 250ms var(--time-function), otline 250ms var(--time-function);
 }
 
 .form-textarea textarea:focus {
   border: 1px solid var(--accent-color);
+  outline: 1px solid var(--accent-color);
 }
 
 /* чекбокс */
